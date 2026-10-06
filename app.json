@@ -1,0 +1,87 @@
+{
+  "name": "Saya Music",
+  "description": "Saya Music is a Telegram music bot prepared for Docker and Railway deployment.",
+  "repository": "https://github.com/shnwazdeveloper/saya-music",
+  "logo": "https://telegra.ph/file/2c6d1a6f78eba6199933a.jpg",
+  "keywords": [
+    "python",
+    "telegram",
+    "music-bot",
+    "pyrogram",
+    "py-tgcalls",
+    "railway",
+    "docker"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from https://my.telegram.org.",
+      "required": true,
+      "value": "33591348"
+    },
+    "API_HASH": {
+      "description": "Telegram API hash from https://my.telegram.org.",
+      "required": true,
+      "value": "d138b2ec1432ef7da497e8e3d451140b"
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token from BotFather.",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Telegram numeric user ID of the owner.",
+      "required": true,
+      "value": "5940554521"
+    },
+    "OWNER_USERNAME": {
+      "description": "Telegram username of the owner (without @).",
+      "required": false,
+      "value": "kidzmc"
+    },
+    "BOT_USERNAME": {
+      "description": "Bot username (without @).",
+      "required": false,
+      "value": "SexySayaBot"
+    },
+    "LOGGER_ID": {
+      "description": "Private log group or channel ID where the bot is admin.",
+      "required": true,
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "Pyrogram/Kurigram assistant account session string.",
+      "required": true,
+      "value": ""
+    },
+    "MONGO_DB_URI": {
+      "description": "MongoDB connection string.",
+      "required": true,
+      "value": ""
+    },
+    "COOKIE_URL": {
+      "description": "Raw URL to a Netscape-format YouTube cookies.txt file.",
+      "required": true,
+      "value": ""
+    },
+    "API_URL": {
+      "description": "Optional external audio API base URL.",
+      "required": false,
+      "value": "https://pvtz.nexgenbots.xyz"
+    },
+    "VIDEO_API_URL": {
+      "description": "Optional external video API base URL.",
+      "required": false,
+      "value": "https://api.video.nexgenbots.xyz"
+    },
+    "DEEP_API": {
+      "description": "Optional Deep API key.",
+      "required": false,
+      "value": "sk-7af66c8b58d74bf1ad470a8618a8d49f"
+    },
+    "API_KEY": {
+      "description": "Optional API key for external downloader API.",
+      "required": false,
+      "value": "30DxNexGenBotsc6b677"
+    }
+  }
+}

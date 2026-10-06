@@ -1,0 +1,30 @@
+name: Code Quality and Syntax Check
+
+on:
+  push:
+    branches:
+      - Master
+  pull_request:
+  schedule:
+    - cron: "30 18 * * *"
+
+jobs:
+  syntax-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile Python files
+        run: python -m compileall -q SayaMusic strings config.py
+
+      - name: Validate JSON config
+        run: |
+          python -m json.tool railway.json > /dev/null
+          python -m json.tool app.json > /dev/null
